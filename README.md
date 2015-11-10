@@ -4,7 +4,7 @@ In this implementation we'll be seeding with static data, and also building a to
 
 As you are using ActiveRecord to access the database compare the methods that are given to those you had to create in the CSV implementation of FarMar.
 
-This project is meant to be exploratory. Take time to try to dive into each piece of Rails (routes, controllers, models, views). This project is built so that you and your partner can create the waves yourself based on the dependencies of the requirements given. This project is due Friday 6/26.
+This project is meant to be exploratory. Take time to try to dive into each piece of Rails (routes, controllers, models, views). This project is built so that you and your partner can create the waves yourself based on the dependencies of the requirements given.
 
 ## Best Practices
 - Use git relentlessly
