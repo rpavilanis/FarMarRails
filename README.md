@@ -27,7 +27,7 @@ Once the above is complete, this project:
 - requires a shared repo with your partner as a collaborator
 - will need to be isolated into a gemset called 'FarMarRails'
   - create the necessary files for RVM to recognize a gemset
-- requires you to create a Rails 4.2.2 application
+- requires you to create a Rails application
   - conform to Rails conventions on naming and inflection
 
 ## Requirements
