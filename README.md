@@ -1,5 +1,5 @@
 # FarMar Rails
-Build a database backed application to view, create, and manage farmers markets as well as their vendors, products, and sales.
+Build a database backend application to view, create, and manage farmers markets as well as their vendors, products, and sales.
 In this implementation we'll be seeding with static data, and also building a tool to allow markets and/or vendors to sign up and add their own data.
 
 As you are using ActiveRecord to access the database compare the methods that are given to those you had to create in the CSV implementation of FarMar.
