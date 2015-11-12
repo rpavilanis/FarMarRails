@@ -20,7 +20,7 @@ Before you start writing _any_ code:
   - Discuss who will do which tasks and when you will target completion
     - What things should be done together as pairs vs individually?
   - Organize your tasks/stories into iterations (a.k.a waves)
-- Create an ERD diagram based on the original data [specification](https://github.com/Ada-Developers-Academy/C3Projects--FarMarFinder)
+- Create an ERD diagram based on the original data [specification](https://github.com/Ada-C4/FarMar)
 
 Once the above is complete, this project:
 
