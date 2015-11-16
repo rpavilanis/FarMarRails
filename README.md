@@ -31,6 +31,8 @@ Once the above is complete, this project:
   - conform to Rails conventions on naming and inflection
   - by using `rails new .` you will create a new rails app _inside_ of the fork folder instead of creating a _new_ folder for your rails app
 
+*Your team shall submit a pull request once you are done with the baseline which shall be merged before moving onto implementing the requirements*
+
 ## Requirements
 However far you and your partner get, the application should have, at a minimum, the following features:
 - Seeded data in your database from the original CSV files
