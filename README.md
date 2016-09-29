@@ -8,8 +8,7 @@ This project is meant to be exploratory. Take time to try to dive into each piec
 
 ## Best Practices
 - Use git relentlessly
-- Use correct indentation
-- Pair program on difficult problems or to share learning experiences.
+- Pair program on difficult problems and to share learning experiences
 
 ## Baseline
 Before you start writing _any_ code:
@@ -20,7 +19,7 @@ Before you start writing _any_ code:
   - Discuss who will do which tasks and when you will target completion
     - What things should be done together as pairs vs individually?
   - Organize your tasks/stories into iterations (a.k.a waves)
-- Create a data diagram based on the original data [specification](https://github.com/Ada-C4/FarMar)
+- Create a data diagram based on the original data [specification](https://github.com/Ada-C6/FarMar)
 
 Once the above is complete, this project:
 
@@ -31,7 +30,7 @@ Once the above is complete, this project:
   - conform to Rails conventions on naming and inflection
   - by using `rails new .` you will create a new rails app _inside_ of the fork folder instead of creating a _new_ folder for your rails app
 
-**Your team shall submit a pull request with a link to your Trello board once you are done with the baseline which shall be merged before moving onto implementing the requirements**
+**Your team shall submit a pull request with a link to your Trello board once you are done with the baseline which shall be reviewed before moving onto implementing the requirements**
 
 ## Requirements
 However far you and your partner get, the application should have, at a minimum, the following features:
@@ -46,7 +45,7 @@ However far you and your partner get, the application should have, at a minimum,
 ### Overall
 - As a user, when I visit "/", I can choose whether I want to act as a Market or a Vendor
 - As a user, I can view all Markets
-- As a user, I can view a specific Market, I should see it's attributes as well as a list of it's vendors
+- As a user, I can view a specific Market, viewing it's attributes as well as a list of it's vendors
 
 ### Market
 - As a market, I can create or edit a Market
