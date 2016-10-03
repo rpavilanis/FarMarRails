@@ -24,8 +24,6 @@ Before you start writing _any_ code:
 Once the above is complete, this project:
 
 - requires a shared repo with your partner as a collaborator
-- will need to be isolated into a gemset called 'FarMarRails'
-  - create the necessary files for RVM to recognize a gemset
 - requires you to create a Rails application
   - conform to Rails conventions on naming and inflection
   - by using `rails new .` you will create a new rails app _inside_ of the fork folder instead of creating a _new_ folder for your rails app
