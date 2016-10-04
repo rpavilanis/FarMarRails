@@ -14,7 +14,6 @@
 ActiveRecord::Schema.define(version: 20161004212046) do
 
   create_table "markets", force: :cascade do |t|
-    t.string   "integer"
     t.string   "name"
     t.string   "address"
     t.string   "city"
