@@ -1,2 +1,8 @@
-<h1>Vendors#index</h1>
-<p>Find me in app/views/vendors/index.html.erb</p>
+<h1>Here are all of the vendors!</h1>
+<% @vendors.each do |vendor| %>
+
+  <article>
+    <h2><%= link_to(vendor.name, vendorsshow_path(vendor.id)) %></h2>
+  </article>
+
+<% end %>
