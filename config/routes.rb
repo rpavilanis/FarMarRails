@@ -1,116 +1,73 @@
 Rails.application.routes.draw do
-  get 'users/index'
+  root to: 'users#index'
 
-  get 'users/show'
+  # main index page
+  get 'users/index' => 'users#index', as: 'usersindex'
 
-  get 'products/index'
+  get 'users/show' => 'users#show', as: 'usersshow'
 
-  get 'products/new'
 
-  get 'products/show'
 
-  get 'products/edit'
+  get 'products/index' => 'products#index', as: "productsindex"
 
-  get 'products/create'
+  get 'products/new' => 'products#new', as: "productsnew"
 
-  get 'products/update'
+  get 'products/show/:id' => 'products#show', as: "productsshow"
 
-  get 'products/destroy'
+  get 'products/:id/edit' => 'products#edit', as: "productsedit"
 
-  get 'sales/index'
+  post 'products/create' => 'products#create', as: "productscreate"
 
-  get 'sales/new'
+  put 'products/:id/update' => 'products#update', as: "productsupdate"
 
-  get 'sales/show'
+  delete 'products/:id/destroy' => 'products#destroy', as: "productsdestroy"
 
-  get 'sales/edit'
 
-  get 'sales/create'
 
-  get 'sales/update'
+  get 'sales/index' => 'sales#index', as: "salesindex"
 
-  get 'sales/destroy'
+  get 'sales/new' => 'sales#new', as: "salesnew"
 
-  get 'markets/index'
+  get 'sales/show/:id' => 'sales#show', as: "salesshow"
 
-  get 'markets/new'
+  get 'sales/:id/edit' => 'sales#edit', as: "salesedit"
 
-  get 'markets/show'
+  post 'sales/create' => 'sales#create', as: "salescreate"
 
-  get 'markets/edit'
+  put 'sales/:id/update' => 'sales#update', as: "salesupdate"
 
-  get 'markets/create'
+  delete 'sales/:id/destroy' => 'sales#destroy', as: "salesdestroy"
 
-  get 'markets/update'
 
-  get 'markets/destroy'
 
-  get 'vendors/index'
+  get 'markets/index' => 'markets#index', as: "marketsindex"
 
-  get 'vendors/new'
+  get 'markets/new' => 'markets#new', as: "marketsnew"
 
-  get 'vendors/show'
+  get 'markets/show/:id' => 'markets#show', as: "marketsshow"
 
-  get 'vendors/edit'
+  get 'markets/:id/edit' => 'markets#edit', as: "marketsedit"
 
-  get 'vendors/create'
+  post 'markets/create' => 'markets#create', as: "marketscreate"
 
-  get 'vendors/update'
+  put 'markets/:id/update' => 'markets#update', as: "marketsupdate"
 
-  get 'vendors/destroy'
+  delete 'markets/:id/destroy' => 'markets#destroy', as: "marketsdestroy"
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  get 'vendors/index' => 'vendors#index', as: "vendorsindex"
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+  get 'vendors/new' => 'vendors#new', as: "vendorsnew"
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  get 'vendors/show/:id' => 'vendors#show', as: "vendorsshow"
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+  get 'vendors/:id/edit' => 'vendors#edit', as: "vendorsedit"
 
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+  post 'vendors/create' => 'vendors#create', as: "vendorscreate"
 
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
+  put 'vendors/:id/update' => 'vendors#update', as: "vendorsupdate"
 
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
+  delete 'vendors/:id/destroy' => 'vendors#destroy', as: "vendorsdestroy"
 
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
 end
