@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = findProduct
   end
 
   def new

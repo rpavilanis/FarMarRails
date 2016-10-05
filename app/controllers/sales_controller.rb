@@ -7,6 +7,7 @@ class SalesController < ApplicationController
   end
 
   def show
+    @sale = findSale
   end
 
   def new
