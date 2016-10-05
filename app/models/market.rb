@@ -4,6 +4,7 @@ class Market < ActiveRecord::Base
   has_many :sales
 
   validates :name, presence: true, uniqueness: true
-  validates :address, :city, :state, :zip, :county, presence: true
+  validates :address, :city, :state, :county, presence: true
+  validates :zip, presence: true, numericality: { only_integer: true }
 
 end
