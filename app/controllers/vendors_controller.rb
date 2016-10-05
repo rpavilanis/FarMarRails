@@ -57,5 +57,9 @@ class VendorsController < ApplicationController
   end
 
   def destroy
+    @vendor = Vendor.find(params[:id])
+    @vendor.destroy
+
+    redirect_to action: "index"
   end
 end

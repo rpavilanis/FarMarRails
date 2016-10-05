@@ -61,5 +61,9 @@ class MarketsController < ApplicationController
 
 
   def destroy
+    @market = Market.find(params[:id])
+    @market.destroy
+
+    redirect_to action: "index"
   end
 end
