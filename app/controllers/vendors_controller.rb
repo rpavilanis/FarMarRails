@@ -1,4 +1,9 @@
 class VendorsController < ApplicationController
+
+  def findVendor
+    return Vendor.find(params[:id].to_i)
+  end
+
   def index
     @vendors = Vendor.all
   end
@@ -8,6 +13,7 @@ class VendorsController < ApplicationController
   end
 
   def show
+    @vendor = findVendor
   end
 
   def edit
