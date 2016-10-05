@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = findProduct
   end
 
   def new
@@ -39,7 +40,7 @@ class ProductsController < ApplicationController
   end
 
   def update
-    @product = findproduct
+    @product = findProduct
 
     if @product == nil
           render :file => 'public/404.html',
