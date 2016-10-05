@@ -36,12 +36,13 @@ class MarketsController < ApplicationController
   end
 
   def edit
-    @market = Market.find(params[:id])
+    @market = findMarket
 
     if @market == nil
           render :file => 'public/404.html',
               :status => :not_found
     end
+
   end
 
   def update
