@@ -12,13 +12,6 @@ class MarketsController < ApplicationController
     @market = Market.new
   end
 
-  def show
-    @market = findMarket
-  end
-
-  def edit
-  end
-
   def create
     @params = params
     @market = Market.new
@@ -39,9 +32,39 @@ class MarketsController < ApplicationController
 
   end
 
-  def update
+  def show
   end
 
+  def edit
+    @market = findMarket
+
+    if @market == nil
+          render :file => 'public/404.html',
+              :status => :not_found
+    end
+
+  end
+
+  def update
+    @market = Market.find(params[:id])
+
+    if @market == nil
+          render :file => 'public/404.html',
+              :status => :not_found
+    end
+
+    if @market.update(name: params[:market][:name], address: params[:market][:address], city: params[:market][:city], state: params[:market][:state], zip: params[:market][:zip], county: params[:market][:county])
+      redirect_to action: "show"
+    else
+      render 'edit'
+    end
+  end
+
+
   def destroy
+    @market = Market.find(params[:id])
+    @market.destroy
+
+    redirect_to action: "index"
   end
 end
