@@ -11,9 +11,13 @@ class SalesController < ApplicationController
   end
 
   def new
+    @sale = Sale.new
   end
 
   def create
+    @params = params
+    @sale = Sale.new
+    @sale = params[:sale]
   end
 
   def edit
