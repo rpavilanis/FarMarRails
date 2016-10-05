@@ -56,5 +56,9 @@ class ProductsController < ApplicationController
   end
 
   def destroy
+    @product = findProduct
+    @product.destroy
+
+    redirect_to action: "index"
   end
 end

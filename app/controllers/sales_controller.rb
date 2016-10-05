@@ -41,5 +41,9 @@ class SalesController < ApplicationController
   end
 
   def destroy
+    @sale = findSale
+    @sale.destroy
+
+    redirect_to action: "index"
   end
 end
