@@ -10,7 +10,7 @@ Products sold:
 
 <article>
   <h3> Currently at:  </h3>
-  <p><%= @vendor.market.name %></p>
+  <p><%= link_to(@vendor.market.name, marketsshow_path(@vendor.market.id)) %></p>
   <p><%= @vendor.market.address %></p>
   <p><%= @vendor.market.city %>, <%= @vendor.market.state %> <%= @vendor.market.zip %></p>
   <p>County: <%= @vendor.market.county %></p>

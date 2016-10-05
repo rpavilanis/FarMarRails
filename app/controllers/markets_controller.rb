@@ -13,6 +13,7 @@ class MarketsController < ApplicationController
   end
 
   def show
+    @market = findMarket
   end
 
   def edit
@@ -35,7 +36,7 @@ class MarketsController < ApplicationController
         # Validation failed; show the "new" form again...
         render :action => :new
     end
-  
+
   end
 
   def update
