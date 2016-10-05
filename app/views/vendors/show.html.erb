@@ -5,6 +5,7 @@ Products sold:
   <% @vendor.products.each do |product| %>
   <li> <%= product.name %> </li>
   <% end %>
+  <li><%= button_to 'New Product', productsnew_path(), method: :get %></li>
 </ul>
 
 
