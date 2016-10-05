@@ -17,7 +17,7 @@ class VendorsController < ApplicationController
   end
 
   def edit
-    @vendor = Vendor.find(params[:id])
+    @vendor = findVendor
 
     if @vendor == nil
           render :file => 'public/404.html',
@@ -26,7 +26,7 @@ class VendorsController < ApplicationController
   end
 
   def update
-    @vendor = Vendor.find(params[:id])
+    @vendor = findVendor
 
     if @vendor == nil
           render :file => 'public/404.html',
@@ -57,7 +57,7 @@ class VendorsController < ApplicationController
   end
 
   def destroy
-    @vendor = Vendor.find(params[:id])
+    @vendor = findVendor
     @vendor.destroy
 
     redirect_to action: "index"

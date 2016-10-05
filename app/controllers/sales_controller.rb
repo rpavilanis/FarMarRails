@@ -1,17 +1,21 @@
 class SalesController < ApplicationController
-  def index
+  def findSale
+    return Sale.find(params[:id].to_i)
   end
 
-  def new
+  def index
   end
 
   def show
   end
 
-  def edit
+  def new
   end
 
   def create
+  end
+
+  def edit
   end
 
   def update
