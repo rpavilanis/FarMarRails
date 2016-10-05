@@ -1,14 +1,16 @@
 <%= form_for @vendor,
   url: action_name do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<ul>
+  <li><%= f.label :name %></li>
+  <li><%= f.text_field :name %></li>
 
-  <%= f.label :employees %>
-  <%= f.text_field :employees %>
+  <li><%= f.label :employees %></li>
+  <li><%= f.text_field :employees %></li>
 
-  <%= f.label :market_id %>
-  <%= f.text_field :market_id %>
+  <li><%= f.label :market_id %></li>
+  <li><%= f.text_field :market_id %></li>
 
-  <%= f.submit %>
+  <li><%= f.submit %>
+</ul>
 
   <% end %>
