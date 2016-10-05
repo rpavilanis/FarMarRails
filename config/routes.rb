@@ -66,7 +66,7 @@ Rails.application.routes.draw do
 
   post 'vendors/create' => 'vendors#create', as: "vendorscreate"
 
-  put 'vendors/:id/update' => 'vendors#update', as: "vendorsupdate"
+  patch 'vendors/:id/update' => 'vendors#update', as: "vendorsupdate"
 
   delete 'vendors/:id/destroy' => 'vendors#destroy', as: "vendorsdestroy"
 
