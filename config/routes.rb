@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   post 'products/create' => 'products#create', as: "productscreate"
 
-  put 'products/:id/update' => 'products#update', as: "productsupdate"
+  patch 'products/:id/update' => 'products#update', as: "productsupdate"
 
   delete 'products/:id/destroy' => 'products#destroy', as: "productsdestroy"
 
@@ -34,7 +34,7 @@ Rails.application.routes.draw do
 
   post 'sales/create' => 'sales#create', as: "salescreate"
 
-  put 'sales/:id/update' => 'sales#update', as: "salesupdate"
+  patch 'sales/:id/update' => 'sales#update', as: "salesupdate"
 
   delete 'sales/:id/destroy' => 'sales#destroy', as: "salesdestroy"
 
@@ -50,7 +50,7 @@ Rails.application.routes.draw do
 
   post 'markets/create' => 'markets#create', as: "marketscreate"
 
-  put 'markets/:id/update' => 'markets#update', as: "marketsupdate"
+  patch 'markets/:id/update' => 'markets#update', as: "marketsupdate"
 
   delete 'markets/:id/destroy' => 'markets#destroy', as: "marketsdestroy"
 
