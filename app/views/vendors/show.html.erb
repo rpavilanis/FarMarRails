@@ -1,2 +1,26 @@
-<h1>Vendors#show</h1>
-<p>Find me in app/views/vendors/show.html.erb</p>
+<h1><%= @vendor[:name] %></h1>
+<p>Current employees: <%= @vendor[:employees] %></p>
+Products sold:
+<ul>
+  <% @vendor.products.each do |product| %>
+  <li> <%= product.name %> </li>
+  <% end %>
+</ul>
+
+
+<article>
+  <h3> Currently at:  </h3>
+  <p><%= @vendor.market.name %></p>
+  <p><%= @vendor.market.address %></p>
+  <p><%= @vendor.market.city %>, <%= @vendor.market.state %> <%= @vendor.market.zip %></p>
+  <p>County: <%= @vendor.market.county %></p>
+</article>
+
+<article>
+  <h5>Sales</h5>
+  <ul>
+    <%# @vendor.sales.each do |sale| %>
+    <li><%#= sale.id %>- <%#= sale. %>
+    </li>
+
+</article>
