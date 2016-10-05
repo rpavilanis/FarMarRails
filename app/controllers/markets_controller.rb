@@ -33,6 +33,7 @@ class MarketsController < ApplicationController
   end
 
   def show
+    @market = findMarket
   end
 
   def edit
@@ -46,7 +47,7 @@ class MarketsController < ApplicationController
   end
 
   def update
-    @market = Market.find(params[:id])
+    @market = findMarket
 
     if @market == nil
           render :file => 'public/404.html',
@@ -62,7 +63,7 @@ class MarketsController < ApplicationController
 
 
   def destroy
-    @market = Market.find(params[:id])
+    @market = findMarket
     @market.destroy
 
     redirect_to action: "index"
