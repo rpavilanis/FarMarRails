@@ -63,7 +63,7 @@ a:link {
 }
 
 /************************************/
-/* MAIN BODY SECTION - INDEX.HTML */
+/* MAIN BODY SECTION - USER INDEX.HTML */
 /************************************/
 body {
   margin-left: .5%;
@@ -78,6 +78,23 @@ h2 {
   /*width: 30%;*/
   margin: 5px 2px 5px 2px;
 }
+
+section article {
+  display: inline-block;
+  width: 20%;
+  /*vertical-align: top;*/
+}
+
+.article-format {
+  text-align: center;
+}
+
+.article-format h3 {
+  text-align: left;
+  margin: 0 4% 0 4%;
+}
+
+
 
 
 /************************************/

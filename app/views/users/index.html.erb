@@ -1,5 +1,18 @@
 <h1>I am a...</h1>
 
-<h3><%= link_to("User", usersshow_path) %></h3>
-<h3><%= link_to("Market", marketsindex_path) %></h3>
-<h3><%= link_to("Vendor", vendorsindex_path) %></h3>
+<section class="article-format">
+
+  <div>
+    <h3>User</h3>
+    <%= link_to(image_tag("users.jpg", :alt => "user", :title => "User"), "show") %>
+  </div>
+  <div>
+    <h3>Market</h3>
+    <%= link_to(image_tag("market-stall.jpg", :alt => "market", :title => "Market"), "markets/index") %>
+  </div>
+  <div>
+    <h3>Vendor</h3>
+    <%= link_to(image_tag("vendoroption.jpg", :alt => "vendor", :title => "Vendor"), "vendors/index") %>
+  </div>
+
+</section>
