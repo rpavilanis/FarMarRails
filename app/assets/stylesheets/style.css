@@ -39,17 +39,11 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
   text-align: center;
 }
 
-.navigation-container img {
-  padding-left: 1.75%;
-}
-
 .navigation-container li a:hover {
-  /*color: #ff7ca7;*/
   color: #D56E4F;
 }
 
 a:hover {
-  /*color: #c98f8f;*/
   color: #D56E4F;
 }
 
@@ -63,7 +57,7 @@ a:link {
 }
 
 /************************************/
-/* MAIN BODY SECTION - USER INDEX.HTML */
+/* MAIN BODY SECTIONS
 /************************************/
 body {
   margin-left: .5%;
@@ -73,7 +67,9 @@ body {
 }
 
 h1 {
-  font-family: 'Josefin Sans';
+  font-family: 'Londrina Shadow';
+  color: #D56E4F;
+  font-size: 3em;
 }
 
 h2 {
@@ -82,6 +78,16 @@ h2 {
   text-align: left;
   /*width: 30%;*/
   margin: 5px 2px 5px 2px;
+}
+
+h3 {
+  text-align: center;
+  margin: 4% 4% 4% 4%;
+  padding: 0;
+  font-family: "Londrina Shadow";
+  color: #D56E4F;
+  font-size: 2.5em;
+
 }
 
 section div {
@@ -95,14 +101,9 @@ section div {
   text-align: center;
 }
 
-.image-format h3 {
+#center {
+  padding-bottom: 2%;
   text-align: center;
-  margin: 4% 4% 4% 4%;
-  padding: 0;
-  font-family: "Londrina Shadow";
-  color: #D56E4F;
-  font-size: 2.5em;
-
 }
 
 
