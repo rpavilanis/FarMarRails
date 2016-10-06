@@ -7,5 +7,5 @@
 
 
 <li><%= button_to 'Edit', productsedit_path(params[:id]), method: :get %></li>
-<li><%= button_to 'Delete', productsdestroy_path(params[:id]), method: :destroy, data: {confirm: 'Are you sure?'} %>
+<li><%= button_to 'Delete', productsdestroy_path(params[:id]), method: :delete, data: {confirm: 'Are you sure?'} %>
 </li>
