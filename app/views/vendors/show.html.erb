@@ -18,12 +18,23 @@ Products sold:
 </article>
 
 <article>
-  <h5>Sales</h5>
+  <h4>Sales</h4>
   <ul>
+
     <% if @vendor.sales != nil %>
+      <% totalsales = 0.0 %>
+
       <% @vendor.sales.each do |sale| %>
-          <li><%= sale.id %>- <%= sale.product.name %> $<%= (sprintf "%.2f", (sale.amount / 100.0)) %></li>
+        <% sale_with_decimals = sale.amount / 100.0 %>
+          <li><%= sale.id %>- <%= sale.product.name %> $<%= (sprintf "%.2f", sale_with_decimals) %></li>
+          <% totalsales += sale_with_decimals %>
       <% end %>
+      <p>Total Sales: $<%= (sprintf "%.2f", totalsales) %></p>
+
+    <% else %>
+      <h3>You might want to try selling something.</h3>
     <% end %>
+
   </ul>
+
 </article>

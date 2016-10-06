@@ -50,4 +50,5 @@ class SalesController < ApplicationController
 
     redirect_to action: "index"
   end
+
 end
