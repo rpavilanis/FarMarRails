@@ -43,19 +43,28 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
   color: #D56E4F;
 }
 
-
-a:hover {
-  color: #D56E4F;
-}
-
-/*a:visited {
-  color: #F5CC7B
-}*/
+/*a:link { color: red; }
+    a:visited { color: blue; }
+    a:visited:hover { color: yellow; }
+    a:hover { color: green; }
+    a:active { color: gray; }*/
 
 a:link {
   color: #000000;
   text-decoration: none;
 }
+
+a:visited {
+  color: #7D543A
+}
+
+a:hover {
+  color: #D56E4F;
+}
+
+
+
+
 
 /************************************/
 /* MAIN BODY SECTIONS
