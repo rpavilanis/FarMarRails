@@ -26,7 +26,7 @@ Products sold:
 
       <% @vendor.sales.each do |sale| %>
         <% sale_with_decimals = sale.amount / 100.0 %>
-          <li><%= sale.id %>- <%= sale.product.name %> $<%= (sprintf "%.2f", sale_with_decimals) %></li>
+          <li><%= link_to(sale.product.name, salesshow_path(sale.id)) %>: $<%= (sprintf "%.2f", sale_with_decimals) %>
           <% totalsales += sale_with_decimals %>
       <% end %>
       <p>Total Sales: $<%= (sprintf "%.2f", totalsales) %></p>
@@ -35,6 +35,7 @@ Products sold:
       <h3>You might want to try selling something.</h3>
     <% end %>
 
+    <li><%= button_to 'New Sale', salesnew_path(), method: :get %></li>
   </ul>
 
 </article>

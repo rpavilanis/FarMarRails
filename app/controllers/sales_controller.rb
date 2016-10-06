@@ -17,7 +17,19 @@ class SalesController < ApplicationController
   def create
     @params = params
     @sale = Sale.new
-    @sale = params[:sale]
+    @sale.amount = params[:sale][:amount]
+    @sale.purchase_time = Time.now
+    @sale.vendor_id = params[:sale][:vendor_id]
+    @sale.product_id = params[:sale][:product_id]
+
+    if(@sale.save)
+      #saved successfully; go to index
+      redirect_to vendorsshow_path (@sale.vendor_id)
+    else
+      #validation failed; show the "new" form again
+      render :action => :new
+    end
+
   end
 
   def edit
@@ -47,8 +59,7 @@ class SalesController < ApplicationController
   def destroy
     @sale = findSale
     @sale.destroy
-
-    redirect_to action: "index"
+    redirect_to vendorsshow_path (@sale.vendor_id)
   end
 
 end
