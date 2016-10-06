@@ -20,8 +20,10 @@ Products sold:
 <article>
   <h5>Sales</h5>
   <ul>
-    <%# @vendor.sales.each do |sale| %>
-    <li><%#= sale.id %>- <%#= sale. %>
-    </li>
-
+    <% if @vendor.sales != nil %>
+      <% @vendor.sales.each do |sale| %>
+          <li><%= sale.id %>- <%= sale.product.name %> $<%= (sprintf "%.2f", (sale.amount / 100.0)) %></li>
+      <% end %>
+    <% end %>
+  </ul>
 </article>
