@@ -1,4 +1,7 @@
 <h1><%= @vendor[:name] %></h1>
+<ul>
+  <li><%= button_to 'Delete this Vendor', vendorsdestroy_path(params[:id]), method: :delete, data: {confirm: 'Are you sure you want to delete this vendor?'} %></li>
+</ul>
 <p>Current employees: <%= @vendor[:employees] %></p>
 Products sold:
 <ul>
