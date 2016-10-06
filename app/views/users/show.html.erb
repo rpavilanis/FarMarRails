@@ -5,7 +5,13 @@
   <%= button_to 'Go', marketsshow_path(:id), method: :get %></p>
 
 
-<h3><%= link_to("Vendors", vendorsindex_path) %></h3>
+<h3><%= link_to("See all Vendors", vendorsindex_path) %></h3>
 <p>or select a vendor:
   <%= collection_select :vendor_id, :name, Vendor.order(:name),:id,:name, include_blank: false %>
   <%= button_to 'Go', vendorsshow_path(:id), method: :get %></p>
+
+
+<h3><%= link_to("See all Products", productsindex_path) %></h3>
+<p>or select a product to see where it is sold:
+  <%= collection_select :product_id, :name, Product.order(:name),:id,:name, include_blank: false %>
+  <%= button_to 'Go', productsshow_path(:id), method: :get %></p>

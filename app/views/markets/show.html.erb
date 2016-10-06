@@ -13,9 +13,9 @@
   <% end %>
 </article>
 
-<ul>
-  <li><%= button_to 'Add New Vendor', vendorsnew_path(params[:id]), method: :get %></li>
-  <li><%= button_to 'Edit Market Info', marketsedit_path(params[:id]), method: :get %></li>
-  <li><%= button_to 'Delete Market', marketsdestroy_path(params[:id]), method: :delete, data: {confirm: 'Are you sure?'} %>
+<ul class="align-buttons">
+  <li><%= button_to 'Add New Vendor', vendorsnew_path(params[:id]), :class => "button", method: :get %></li>
+  <li><%= button_to 'Edit Market Info', marketsedit_path(params[:id]), :class => "button", method: :get %></li>
+  <li><%= button_to 'Delete Market', marketsdestroy_path(params[:id]), :class => "button", method: :delete, data: {confirm: 'Are you sure?'} %>
   </li>
 </ul>

@@ -2,8 +2,8 @@
 
 html {
 font: normal normal 14px/1 'Playfair Display', 'serif';
-/*, Helvetica, Arial, sans-serif;*/
 }
+
 /************************************/
 /* NAVIGATION BAR AND HEADER SECTION */
 /************************************/
@@ -12,8 +12,6 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
   width: 100%;
   height: 10%;
   text-align:center;
-  /*position: fixed;*/
-  /*background-color: #fff796;*/
 }
 
 .navigation-container li {
@@ -26,7 +24,6 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
   padding: 0 0 2% 0;
   margin: 0;
 }
-
 
 /************************************/
 /* LINKS */
@@ -43,18 +40,19 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
   color: #D56E4F;
 }
 
-a:hover {
-  color: #D56E4F;
-}
-
-/*a:visited {
-  color: #F5CC7B
-}*/
-
 a:link {
   color: #000000;
   text-decoration: none;
 }
+
+a:visited {
+  color: #7D543A
+}
+
+a:hover {
+  color: #D56E4F;
+}
+
 
 /************************************/
 /* MAIN BODY SECTIONS
@@ -81,8 +79,7 @@ h2 {
 }
 
 h3 {
-  text-align: center;
-  margin: 4% 4% 4% 4%;
+  margin: 2% 0 2% 0;
   padding: 0;
   font-family: "Londrina Shadow";
   color: #D56E4F;
@@ -106,7 +103,33 @@ section div {
   text-align: center;
 }
 
+/************************************/
+/* BUTTONS */
+/************************************/
+.align-buttons {
+  padding-left: 0;
+}
 
+.align-buttons li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 1% 2% 1% 2%; 
+}
+
+.button {
+  background-color: #D56E4F;
+  border: none;
+  color: #D2E4E8;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #A7B724;
+  color: #D2E4E8;
+}
 
 
 /************************************/
