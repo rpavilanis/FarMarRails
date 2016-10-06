@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get 'users/show' => 'users#show', as: 'usersshow'
 
 
-
   get 'products/index' => 'products#index', as: "productsindex"
 
   get 'products/new' => 'products#new', as: "productsnew"
