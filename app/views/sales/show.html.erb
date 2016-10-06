@@ -4,7 +4,7 @@
 <h4><%= @sale.purchase_time %></h4>
 
 
-<ul>
-  <li><%= button_to 'Edit this Sale', salesedit_path(params[:id]), method: :get %></li>
-  <li><%= button_to 'Delete this Sale', salesdestroy_path(), method: :delete, data: {confirm: 'Are you sure you want to delete this sale?'} %></li>
+<ul class="align-buttons">
+  <li><%= button_to 'Edit this Sale', salesedit_path(params[:id]), :class => "button", method: :get %></li>
+  <li><%= button_to 'Delete this Sale', salesdestroy_path(), :class => "button", method: :delete, data: {confirm: 'Are you sure you want to delete this sale?'} %></li>
 </ul>
