@@ -43,12 +43,6 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
   color: #D56E4F;
 }
 
-/*a:link { color: red; }
-    a:visited { color: blue; }
-    a:visited:hover { color: yellow; }
-    a:hover { color: green; }
-    a:active { color: gray; }*/
-
 a:link {
   color: #000000;
   text-decoration: none;
@@ -91,8 +85,7 @@ h2 {
 }
 
 h3 {
-  text-align: center;
-  margin: 4% 4% 4% 4%;
+  margin: 2% 0 2% 0;
   padding: 0;
   font-family: "Londrina Shadow";
   color: #D56E4F;
