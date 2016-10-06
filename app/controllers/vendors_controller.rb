@@ -62,4 +62,20 @@ class VendorsController < ApplicationController
 
     redirect_to action: "index"
   end
+  # 
+  # def total_sales
+  #   @vendor = findVendor
+  #   totalsales = 0.0
+  #
+  #   if @vendor.sales == nil
+  #     return totalsales
+  #   else
+  #     @vendor.sales.each do |sale|
+  #       totalsales += sale.amount / 100.0
+  #     end
+  #   end
+  #
+  #   return totalsales
+  # end
+
 end
