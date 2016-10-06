@@ -1,18 +1,18 @@
 <h1>I am a...</h1>
 
-<section class="article-format">
+<section class="image-format">
 
   <div>
-    <h3>User</h3>
-    <%= link_to(image_tag("users.jpg", :alt => "user", :title => "User"), "users/show") %>
+    <%= link_to(image_tag("users.png", :alt => "user", :title => "User"), "users/show") %>
+    <h3>Visitor</h3>
   </div>
   <div>
-    <h3>Market</h3>
     <%= link_to(image_tag("market-stall.jpg", :alt => "market", :title => "Market"), "markets/index") %>
+    <h3>Market</h3>
   </div>
   <div>
+    <%= link_to(image_tag("vendoroption.png", :alt => "vendor", :title => "Vendor"), "vendors/index") %>
     <h3>Vendor</h3>
-    <%= link_to(image_tag("vendoroption.jpg", :alt => "vendor", :title => "Vendor"), "vendors/index") %>
   </div>
 
 </section>

@@ -1,4 +1,4 @@
-@import  'https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display';;
+@import   'https://fonts.googleapis.com/css?family=Josefin+Sans|Londrina+Shadow|Playfair+Display';
 
 html {
 font: normal normal 14px/1 'Playfair Display', 'serif';
@@ -45,16 +45,16 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
 
 .navigation-container li a:hover {
   /*color: #ff7ca7;*/
-  color: #b24569;
+  color: #D56E4F;
 }
 
 a:hover {
   /*color: #c98f8f;*/
-  color: #4fb1cc;
+  color: #D56E4F;
 }
 
 /*a:visited {
-  color: #000000
+  color: #F5CC7B
 }*/
 
 a:link {
@@ -68,7 +68,12 @@ a:link {
 body {
   margin-left: .5%;
   margin-right: .5%;
-  font-family: 'Playfair Display', serif
+  font-family: 'Playfair Display', serif;
+  background-color: #D2E4E8
+}
+
+h1 {
+  font-family: 'Josefin Sans';
 }
 
 h2 {
@@ -79,19 +84,25 @@ h2 {
   margin: 5px 2px 5px 2px;
 }
 
-section article {
+section div {
   display: inline-block;
-  width: 20%;
+  padding: 0;
+  width: 32%;
   /*vertical-align: top;*/
 }
 
-.article-format {
+.image-format {
   text-align: center;
 }
 
-.article-format h3 {
-  text-align: left;
-  margin: 0 4% 0 4%;
+.image-format h3 {
+  text-align: center;
+  margin: 4% 4% 4% 4%;
+  padding: 0;
+  font-family: "Londrina Shadow";
+  color: #D56E4F;
+  font-size: 2.5em;
+
 }
 
 
