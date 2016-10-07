@@ -8,8 +8,7 @@
   <li><%= f.text_field :employees %></li>
 
   <li><%= f.label :market_id %></li>
-  <li><%= f.collection_select :market_id, Market.order(:name),:id,:name, include_blank: false %>
-  </li>
+  <li><%= f.select(:market_id, Market.all.map{|u| [u.name, u.id]}, {include_blank: true}) %></li>
 
   <li><%= f.submit class: 'button' %>
 </ul>

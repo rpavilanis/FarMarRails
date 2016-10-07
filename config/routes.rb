@@ -43,6 +43,8 @@ Rails.application.routes.draw do
 
   get 'markets/show/:id' => 'markets#show', as: "marketsshow"
 
+  get 'markets/:state/show' => 'markets#showstate', as: "marketsshowstate"
+
   get 'markets/:id/edit' => 'markets#edit', as: "marketsedit"
 
   get 'markets/new' => 'markets#new', as: "marketsnew"
