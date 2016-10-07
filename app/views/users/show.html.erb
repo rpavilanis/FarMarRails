@@ -4,6 +4,12 @@
   <%= collection_select :market_id, :name, Market.order(:name),:id,:name, include_blank: false %>
   <%= button_to 'Go', marketsshow_path(:id), method: :get, class: :button %></p>
 
+<p>See Market by State:
+  <%= select_tag :state, options_for_select( us_states ) %>
+  <%= button_to 'Go', marketsshowstate_path(:state), method: :get, class: :button %>
+</p>
+
+
 
 <h3><%= link_to("See all Vendors", vendorsindex_path) %></h3>
 <p>or select a vendor:

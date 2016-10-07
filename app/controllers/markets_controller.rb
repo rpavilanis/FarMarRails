@@ -36,6 +36,13 @@ class MarketsController < ApplicationController
     @market = findMarket
   end
 
+  def showstate
+    # @state = params[:state]
+    puts params[:state]
+    @market = Market.find_by( state: params[:state] )
+    # redirect_to marketsshowstate
+  end
+
   def edit
     @market = findMarket
 
