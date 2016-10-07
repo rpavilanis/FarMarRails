@@ -138,31 +138,3 @@ ul   {
   background-color: #A7B724;
   color: #D2E4E8;
 }
-
-
-/************************************/
-/* FOOTER */
-/************************************/
-footer {
-  clear: both;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 1%;
-  height: 3%;
-  bottom:0;
-}
-
-footer section {
-  float: right;
-  width: 10%;
-  margin: 0;
-}
-
-footer section a {
-  padding: 0 1% .5% 1%;
-}
-
-footer p {
-  float: left;
-  /*width: 90%;*/
-}
