@@ -4,10 +4,12 @@
 </ul>
 <p>Current employees: <%= @vendor[:employees] %></p>
 Products sold:
-<ul class="align-buttons">
+<ul>
   <% @vendor.products.each do |product| %>
   <li><%= link_to(product.name, productsshow_path(product.id)) %></li>
   <% end %>
+</ul>
+<ul class="align-buttons">
   <li><%= button_to 'New Product', productsnew_path(), :class => "button", method: :get %></li>
 </ul>
 
@@ -22,7 +24,7 @@ Products sold:
 
 <article>
   <h3>This Month's Sales:</h3>
-  <ul class="align-buttons">
+  <ul>
     <% if @vendor.sales != nil %>
       <% totalsales = 0.0 %>
       <% @vendor.sales.each do |sale| %>
@@ -37,7 +39,7 @@ Products sold:
   </ul>
 
   <h3>All Sales:</h3>
-  <ul class="align-buttons">
+  <ul>
 
     <% if @vendor.sales != nil %>
       <% totalsales = 0.0 %>
@@ -52,7 +54,8 @@ Products sold:
     <% else %>
       <h3>You might want to try selling something.</h3>
     <% end %>
-
+  </ul>
+  <ul class="align-buttons">
     <li><%= button_to 'New Sale', salesnew_path(), :class => "button", method: :get %></li>
   </ul>
 
