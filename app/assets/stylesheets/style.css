@@ -104,6 +104,14 @@ section div {
 }
 
 /************************************/
+/* FORMS */
+/************************************/
+ul   {
+  list-style-type: none;
+}
+
+
+/************************************/
 /* BUTTONS */
 /************************************/
 .align-buttons {
@@ -113,7 +121,7 @@ section div {
 .align-buttons li {
   display: inline-block;
   list-style-type: none;
-  margin: 1% 2% 1% 2%; 
+  margin: 1% 2% 1% 2%;
 }
 
 .button {
