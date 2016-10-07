@@ -22,6 +22,23 @@
   <% end %>
 </article>
 
+<article>
+  <h3>This Month's Sales:</h3>
+  <ul>
+    <% totalsales = 0.0 %>
+    <% @market.vendors.each do |vendor| %>
+      <% vendor.sales.each do |sale| %>
+        <% if sale.purchase_time.to_time.month == 10 %>
+          <% sale_with_decimals = sale.amount / 100.0 %>
+            <li><%= link_to(sale.product.name, salesshow_path(sale.id)) %>: $<%= (sprintf "%.2f", sale_with_decimals) %>, <%= sale.purchase_time.to_datetime.month %>/<%= sale.purchase_time.to_datetime.year %></li>
+            <% totalsales += sale_with_decimals %>
+            <% end %>
+          <% end %>
+        <% end %>
+    <p>Total Sales this Month: $<%= (sprintf "%.2f", totalsales) %></p>
+  </ul>
+</article>
+
 <ul class="align-buttons">
   <li><%= button_to 'Add New Vendor', vendorsnew_path(params[:id]), :class => "button", method: :get %></li>
   <li><%= button_to 'Edit Market Info', marketsedit_path(params[:id]), :class => "button", method: :get %></li>
