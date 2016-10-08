@@ -37,16 +37,18 @@ class MarketsController < ApplicationController
   end
 
   def showstate
-    puts params[:state]
     @markets = Market.where( state: params[:state] )
+    if @markets == nil
+      redirect_to action: 'marketsindex'
+    end
   end
 
   def edit
     @market = findMarket
 
     if @market == nil
-          render :file => 'public/404.html',
-              :status => :not_found
+      render :file => 'public/404.html',
+          :status => :not_found
     end
 
   end
