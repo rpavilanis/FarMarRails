@@ -6,7 +6,7 @@
 
 <p>See Market by State:
   <%= select_tag :state, options_for_select( us_states ) %>
-  <%= button_to 'Go', marketsshowstate_path(:state), method: :get, class: :button %>
+  <%= button_to 'Go', marketsshowstate_path('Washington'), method: :get, class: :button %>
 </p>
 
 
