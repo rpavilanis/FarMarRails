@@ -21,7 +21,7 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
 }
 
 .navigation-container ul {
-  padding: 0 0 2% 0;
+  padding: 1%;
   margin: 0;
 }
 
@@ -30,7 +30,7 @@ font: normal normal 14px/1 'Playfair Display', 'serif';
 /************************************/
 .navigation-container li a {
   color: #000000;
-  font-size: .6em;
+  font-size: 2em;
   font-family: 'Josefin Sans';
   text-decoration: none;
   text-align: center;
@@ -68,6 +68,7 @@ h1 {
   font-family: 'Londrina Shadow';
   color: #D56E4F;
   font-size: 3em;
+  padding-top: 2%;
 }
 
 h2 {
